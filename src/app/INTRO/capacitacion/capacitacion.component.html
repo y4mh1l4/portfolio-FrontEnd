@@ -1,0 +1,24 @@
+<!--Seccion de Capacitacion-->
+<div class="container">
+  <div class="section-education">
+    <div class="row">
+      <div class="col-lg-3">
+        <h2 class="section-subHead mb-4"><b>Capacitación</b></h2>
+      </div>
+      <div class="col-lg-9" data-aos="fade-up"
+            data-aos-duration="3500">
+              <div class="EducationList">
+                <div class="row">
+                  <div class="col-md-6" *ngFor="let capacitaciones of cursos">
+                    <div class="resume-list b-box p-4 mb-4 ">
+                      <div>
+                        <div>
+                          <img [src]="capacitaciones.imagen" width="350px" height="250px">
+                          <br>
+                          <h5 class="d-inline-block my-3"><span class="text-info">{{capacitaciones.fecha}}</span></h5>
+                          <h4><span class="text-white">{{capacitaciones.curso}}</span></h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    

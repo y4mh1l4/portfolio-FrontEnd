@@ -1,0 +1,33 @@
+
+/*foto de perfil*/
+.rounded-circle.w-100{
+    position: absolute;
+     z-index: 1;
+     height: auto;
+     width: 23% !important;
+     margin-top: -25%;
+     margin-left: 3%;  
+ }
+
+ .upload img {
+    border-radius: 50%;
+    border: 6px solid #f21696;
+}
+
+.upload .round input[text = "file"] {
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+}
+
+ 
+ /*Estilo Nombre y apellido*/
+ .nombre-apellido{
+     margin-left: 50%;
+     color:#18f2ef;
+     text-shadow: 0 0 5px #0be3e7,
+     0 0 25px #0be3e7,
+     0 0 50px#0be3e7,
+     0 0 100px #0be3e7;
+     text-transform: uppercase;   
+ }

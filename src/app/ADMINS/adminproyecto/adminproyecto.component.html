@@ -1,0 +1,30 @@
+<!--seccion de Proyectos-->
+<div class="container text-center pt-5">
+    <h2 class="titulo"><b>Proyectos</b></h2>
+  <br>
+  <div class="pull-right pt-3">
+    <button type="button" class="btn btn-project" data-bs-toggle="modal" data-bs-target="#agregarproyecModal">
+      <i class="fa-solid fa-plus"></i> Agregar Proyecto</button>
+    
+  </div>
+  <div class="card-group mt-3" data-aos="fade-down">
+<div class="tarjeta" *ngFor="let proyectos of project">
+  <div class="subtitulo"><b>{{proyectos.subtitulo}}</b></div>
+  <div class="cuerpo">
+  <img [src]="proyectos.imagen" width="400px" height="250px">
+  <!-- Date, Category of the Project -->
+  <p><span class="text-white">Datos:&nbsp; {{proyectos.fecha}}</span></p>
+  <p><span class="text-white">Categoria:&nbsp; {{proyectos.descripcion}}</span></p>
+  <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+  routerLink="/proyecto/{{proyectos.id}}"><i class="fa-solid fa-pen"></i> Editar</button>
+  <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" 
+  (click)="borrar(proyectos.id!)"><i class="fa-solid fa-trash-can"></i> Eliminar</button>
+  </div>
+  <div class="pie">
+  <a [href]="proyectos.enlace" target="_blank">Ir a la Página</a>
+</div>
+</div>
+</div>
+<footer>
+</footer>
+<app-agregardesafio></app-agregardesafio>

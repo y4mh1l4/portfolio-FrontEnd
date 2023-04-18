@@ -1,0 +1,31 @@
+<!--Section Experiencia-->
+<section>
+    <div class="container">
+    <div class="section-head">
+    <h2 class="text-center">Conocimientos</h2>
+  </div>
+  <div class="section-inner">
+    <div class="section-resume-wrap">
+      <div class="section-experience mb-5" >
+        <div class="row" >
+          <div class="col-lg-3">
+            <h2 class="section-subHead mb-4" ><b>Mi Experiencia</b></h2>
+          </div>
+            <div class="col-lg-9" data-aos="fade-up"ng 
+            data-aos-duration="3500">
+              <div class="ExperienceList b-box p-4" *ngFor="let experiencia of experto">
+                  <div class="row align-items-center">
+                    <div class="col-3 col-md-3 pb-3 pb-md-0">
+                      <img [src]="experiencia.logo" class="rounded-circle w-75">
+                      <h4><span class="text-primary"><b>{{experiencia.empresa}}</b></span></h4>	
+                    </div>
+                    <div class="col-md-5 pb-2 pb-md-0">
+                      <h3 class="mb-3"><span class="text-info"><b>{{experiencia.puesto}}</b></span></h3>
+                      <h5><span class="text-white">{{experiencia.descripcion}}</span></h5>
+                    </div>
+                    <div class="col-md-4 text-md-right"><h4><span class="text-info">{{experiencia.fechainicio}} {{experiencia.fechafinal}}</span></h4></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>

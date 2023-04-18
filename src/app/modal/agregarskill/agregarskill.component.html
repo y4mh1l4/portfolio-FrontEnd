@@ -1,0 +1,44 @@
+<!-- Modal de Habilidades para agregar-->
+<form [formGroup]="Form" (ngSubmit)="onEnviar($event)" name="agreskillForm">
+    <div class="modal fade" id="agregarskillModal" tabindex="-1" aria-labelledby="agregarskillModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="habilidades" class="modal-title" id="agregarskillModalLabel"><b>Agregar más Habilidades</b></h2>
+              <i  (click)="refrescar()" class="fa-solid fa-rotate-left"></i>
+            </div>
+            <div class="modal-body">
+              <div class="col-sm-10 pt-3">
+                <label for="file"><span class="text-info"><h4>Porcentaje de progreso:</h4></span></label>
+                <input list="porcentajes" formControlName="porcentaje">
+                <datalist id="porcentajes">
+                  <option>10</option>
+                  <option>30</option>
+                  <option>50</option>
+                  <option>70</option>
+                  <option>100</option>
+                </datalist>
+                <div *ngIf="porcentaje.invalid && (porcentaje.dirty || porcentaje.touched)"class="alert text-danger">
+                  <div *ngIf="porcentaje.errors?.['required']">
+                    <b>El numero de porcentaje es requerido.</b>
+                  </div>
+               </div>
+                <div class="mb-3 pt-3">
+                  <label for="lenguaje" class="form-label"><span class="text-primary"><h4>ej: html</h4></span></label>
+                  <input type="text" class="form-control" formControlName="skill" id="lenguaje" placeholder="">
+                  <div *ngIf="skill.invalid && (skill.dirty || skill.touched)"class="alert text-danger">
+                    <div *ngIf="skill.errors?.['required']">
+                      <b>La habilidad es requerido.</b>
+                    </div>
+                 </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-success" data-bs-toggle="modal">Agregar</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </form>

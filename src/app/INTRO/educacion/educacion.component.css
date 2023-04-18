@@ -1,0 +1,13 @@
+/*Estilos en el subtitulo experiencia y educacion*/
+.section-subHead.mb-4{
+    color:#ee7ad9;
+    border: 5px solid #df0930;
+    border-radius: 5px 2px 40px;
+    box-shadow: 0 0 5px #f5099a, 0 0 15px #f5099a, 0 0 45px #f5099a;
+}
+/*Estilo en la caja de Educacion*/
+.resume-list.b-box.p-4.mb-4{
+    border:2px solid  #1fcfee;
+    border-radius: 4rem;
+    background: linear-gradient(450deg,  rgba(90, 1, 77, 0.881),rgba(10, 2, 85, 0.83));
+}

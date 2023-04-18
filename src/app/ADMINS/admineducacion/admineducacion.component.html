@@ -1,0 +1,32 @@
+ <!--Formacion-->
+ <section>
+    <div class="container">
+    <div class="section-education">
+      <div class="row">
+        <div class="col-lg-3">
+          <h2 class="section-subHead mb-4"><b>Formación</b></h2>
+          <button type="button" class="btn btn-edu" data-bs-toggle="modal" data-bs-target="#agregareducModal">Agregar Formacion</button>
+        </div>
+        <div class="col-lg-9" data-aos="fade-up"
+        data-aos-duration="3500">
+          <div class="EducationList">
+            <div class="row">
+              <div class="col-md-6" *ngFor="let formaciones of educacion">
+                <div class="resume-list b-box p-4 mb-4 ">
+                  <div>
+                    <h4><span class="text-primary"><b>{{formaciones.institucion}}</b></span></h4>
+                    <img [src]="formaciones.logo" class="rounded-circle w-25">
+                    <br>
+                    <h5 class="d-inline-block my-3"><span class="text-info">{{formaciones.fechainicio}} {{formaciones.fechafinal}}</span></h5>
+                    <h4><span class="text-white">{{formaciones.descripcion}}</span></h4>
+                  </div>
+                    <button type="submit" class="btn btn-outline-success" data-bs-toggle="modal"
+                    routerLink="/formacion/{{formaciones.id}}">Editar</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                    (click)="borrar(formaciones.id!)">Eliminar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <app-agregarformacion></app-agregarformacion>

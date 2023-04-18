@@ -1,0 +1,26 @@
+<!--Formacion-->
+<section>
+  <div class="container">
+  <div class="section-education">
+    <div class="row">
+      <div class="col-lg-3">
+        <h2 class="section-subHead mb-4"><b>Formación</b></h2>
+      </div>
+      <div class="col-lg-9" data-aos="fade-up"
+      data-aos-duration="3500">
+        <div class="EducationList" >
+          <div class="row" >
+            <div class="col-md-6" *ngFor="let formaciones of educacion">
+              <div class="resume-list b-box p-4 mb-4">
+                <div>
+                  <h4><span class="text-primary"><b>{{formaciones.institucion}}</b></span></h4>
+                  <img [src]="formaciones.logo" class="rounded-circle w-50">
+                  <br>
+                  <h4 class="d-inline-block my-3"><span class="text-info">{{formaciones.fechainicio}} {{formaciones.fechafinal}}</span></h4>
+                  <h4><span class="text-white">{{formaciones.descripcion}}</span></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

@@ -1,0 +1,64 @@
+<!-- Modal de Nombre y Ocupacion -->
+<form [formGroup]="Form" (ngSubmit)="onEnviar($event)" name="datosForm">
+        <div class="container-fluid pt-5">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="perfil" class="modal-title" id="nombreModalLabel"><b>Editar Perfil</b></h2>
+              <i  (click)="refrescar()" class="fa-solid fa-rotate-left"></i>
+            </div>
+            <div class="modal-body">
+              <input type="hidden" formControlName="id"  [ngModel]="persona.id">
+              <div class="col-sm-10 pt-4">
+                <label for="perfil" class="form-label"><span class="text-info"><h4>URL de la Foto del Perfil</h4></span></label>
+                <input type="url" class="form-control" id="perfil" formControlName="perfil" [ngModel]="persona.perfil">
+                <div *ngIf="perfil.invalid && (perfil.dirty || perfil.touched)"class="alert text-danger">
+                  <div *ngIf="apellido.errors?.['required']">
+                    <b>La foto de Perfil es requerido.</b>
+                  </div>
+                  </div>
+              </div>
+              <div class="col-sm-10 pt-3">
+                <label for="foto" class="form-label"><span class="text-info"><h4>URL de la Foto del Banner</h4></span></label>
+                <input type="url" class="form-control" id="foto" formControlName="foto" [ngModel]="persona.foto">
+                <div *ngIf="foto.invalid && (foto.dirty || foto.touched)"class="alert text-danger">
+                  <div *ngIf="foto.errors?.['required']">
+                    <b>La foto del Banner es requerido.</b>
+                  </div>
+                  </div>
+              </div>
+                <div class="col-sm-10 pt-3">
+                    <label for="inputNombre" class="form-label"><span class="text-info"><h4>Nombre</h4></span></label>
+                    <input type="text" class="form-control" id="inputNombre" formControlName="nombre" [ngModel]="persona.nombre">
+                    <div *ngIf="nombre.invalid && (nombre.dirty || nombre.touched)"class="alert text-danger">
+                      <div *ngIf="nombre.errors?.['required']">
+                        <b>El nombre es requerido.</b>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-10 pt-3">
+                    <label for="inputEmail4" class="form-label"><span class="text-info"><h4>Apellido</h4></span></label>
+                    <input type="apellido" class="form-control" id="inputApellido" formControlName="apellido" [ngModel]="persona.apellido">
+                    <div *ngIf="apellido.invalid && (apellido.dirty || apellido.touched)"class="alert text-danger">
+                      <div *ngIf="apellido.errors?.['required']">
+                        <b>El Apellido es requerido.</b>
+                      </div>
+                      </div>
+                  </div>
+              <div class="col-sm-10 pt-3">
+                <label for="inputOcupacion" class="form-label"><span class="text-info"><h4>Ocupación</h4></span></label>
+                <input type="text" class="form-control" id="inputOcupacion"  formControlName="profesion" placeholder="" [ngModel]="persona.profesion">
+                <div *ngIf="profesion.invalid && (profesion.dirty || profesion.touched)"class="alert text-danger">
+                  <div *ngIf="profesion.errors?.['required']">
+                    <b>La profesion es requerido.</b>
+                  </div>
+                  </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-success" data-bs-toggle="modal" >Guardar</button>
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal" (click)="salir()">Cancelar</button>
+             </div>
+          </div>
+        </div>
+      </form>
+    

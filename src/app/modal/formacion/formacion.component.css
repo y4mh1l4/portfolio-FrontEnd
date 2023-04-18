@@ -1,0 +1,13 @@
+/*ventanas modales*/
+.modal-body{
+    background: rgb(4, 0, 18);
+}
+.modal-footer{
+    background: rgb(4, 0, 18);
+}
+.modal-title{
+    color: rgb(240, 7, 205);
+}
+i.fa-solid.fa-rotate-left{
+    color:rgb(247, 244, 250)
+}

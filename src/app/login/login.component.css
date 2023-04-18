@@ -1,0 +1,27 @@
+*{
+    margin: 0%;
+}
+/*estilo en el fondo del login */
+section{
+    background: #3e06c136;
+}
+/*Estilo en los iconos de login */
+i.fa-solid.fa-envelope.fa-2x,
+i.fa-solid.fa-key.fa-2x,
+i.fa-solid.fa-user-circle.user.fa-6x{
+    color: #ed14ac;
+}
+/*bienvenido */
+.Bienvenido{
+    color:#98fbfa;
+}
+/*estilo en el boton de inicio */
+.btn.btn-inicio{
+    color: white; 
+    background: -webkit-repeating-linear-gradient(to right, rgb(208, 8, 198), #3e06c1);
+    background: linear-gradient(to right, rgba(168, 4, 180, 0.981), #4604cbf0);
+}
+
+
+
+

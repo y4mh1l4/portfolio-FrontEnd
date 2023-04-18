@@ -1,0 +1,41 @@
+/*Redes sociales y login */
+.navbar.navbar-expand-lg.bg-primary{
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(176,6,121,1) 37%, rgba(32,82,230,1) 77%, rgba(5,8,59,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(176,6,121,1) 37%, rgba(32,82,230,1) 77%, rgba(5,8,59,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(176,6,121,1) 37%, rgba(32,82,230,1) 77%, rgba(5,8,59,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#05083b",GradientType=1);
+}
+
+/*estilos de los iconos de las redes sociales */
+i.fa-brands.fa-github.fa-2xl,
+i.fa-brands.fa-facebook.fa-2xl,
+i.fa-brands.fa-linkedin.fa-2xl,
+i.fa-brands.fa-instagram.fa-2xl,
+i.fa-solid.fa-user-lock.fa-2xl,
+i.fa-solid.fa-house-chimney-user.fa-2xl{
+    color: #fff  
+}
+i.fa-brands.fa-github.fa-2xl:hover{
+    color: dimgrey
+}
+i.fa-brands.fa-facebook.fa-2xl:hover{
+    color: #0636F6  
+}
+i.fa-brands.fa-linkedin.fa-2xl:hover{
+    color: #14DBF7
+}
+i.fa-brands.fa-instagram.fa-2xl:hover{
+    color: #F4106D
+}
+i.fa-solid.fa-user-lock.fa-2xl:hover{
+    color: #c233f2
+}
+i.fa-solid.fa-house-chimney-user.fa-2xl:hover{
+    color:#cd16ee
+}
+
+.list-group{
+     --bs-list-group-bg: transparent;
+     --bs-list-group-border-color: transparent;
+}

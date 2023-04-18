@@ -1,0 +1,36 @@
+<!-- Modal sobre mi -->
+<form [formGroup]="Form" (ngSubmit)="onEnviar($event)" name="sobremiForm">
+       <div class="container-fluid pt-5">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h2 class="sobre mi" class="modal-title" id="sobremiModalLabel"><b>Sobre Mí</b></h2>
+             <i  (click)="refrescar()" class="fa-solid fa-rotate-left"></i>
+           </div>
+           <div class="modal-body">
+            <input type="hidden" formControlName="id" [ngModel]="sobremi.id">
+               <div class="col-sm-10 mb-3 pt-4">
+                   <label for="titulo" class="form-label"><span class="text-info"><h5>Título</h5></span></label>
+                   <input  type="text" class="form-control"  formControlName="titulo" id="titulo" placeholder="" [ngModel]="sobremi.titulo">
+                   <div *ngIf="titulo.invalid && (titulo.dirty || titulo.touched)"class="alert text-danger">
+                    <div *ngIf="titulo.errors?.['required']">
+                      <b>El Titulo es requerido.</b>
+                    </div>
+                 </div>
+                 </div>
+                 <div class="col-sm-10 mb-3 pt-3">
+                   <label for="contenido" class="form-label"><span class="text-info"><h5>Contenido</h5></span></label>
+                   <textarea class="form-control" id="contenido" formControlName="contenido" rows="13" row="justify-content-start" [ngModel]="sobremi.contenido"></textarea>
+                   <div *ngIf="contenido.invalid && (contenido.dirty || contenido.touched)"class="alert text-danger">
+                    <div *ngIf="contenido.errors?.['required']">
+                      <b>El Contenido debe ser completado.</b>
+                    </div>
+                 </div>
+                 </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success" data-bs-toggle="modal">Guardar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+</form>

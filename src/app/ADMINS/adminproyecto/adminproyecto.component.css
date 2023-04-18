@@ -1,0 +1,86 @@
+/*Estilo de la tarjeta de Poryectos*/
+.tarjeta{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:420px;
+    border: 1px solid rgb(23, 229, 248);
+    box-shadow: 2px 2px 8px 4px rgba(42, 152, 243, 0.82);
+    border-radius: 15px;
+    font-family: sans-serif;
+    margin-top: 3%;
+    margin-left: 2%;
+    font-size: 16px;
+    min-width: 48%;
+    transition: all 400ms ease;
+    }
+    
+    .tarjeta:hover{
+        box-shadow: 5px 5px 20px rgba(240, 230, 230, 0.4);
+        transition: translateY(-3%);
+    }
+    /*Estilo en el titulo "Proyecto"*/
+    .titulo{
+        background: linear-gradient(450deg, rgba(117, 18, 230, 0.695),rgba(4, 37, 204, 0.758));
+        border:1px solid rgb(55, 223, 228);
+        padding: 0.5rem;
+        box-sizing: border-box;
+        margin-right: -4rem;
+        margin-left: -4rem;
+        color: rgb(207, 228, 230);
+        text-transform: uppercase;
+        box-shadow: 0 0 10px #080fd1, 0 0 40px #080fd1, 0 0 80px #080fd1;
+    }
+
+    /*estilos en los subtitulos*/
+.subtitulo{
+    font-size: 24px;
+    padding: 10px 10px 0 10px;
+    background:rgba(22, 5, 182, 0.925);
+    color: rgb(207, 228, 230);
+    border-radius: 9px;
+    }
+    /*Estilo de fondo de la tarjeta*/
+    .cuerpo{
+    background: rgba(0, 0, 0);
+    padding: 10px;
+    
+    }
+    /*Estilo pie de la tarjeta*/
+    .pie{
+    background: #cd0bb3;
+    border-radius:0 0 15px 15px;
+    padding: 10px;
+    text-align:center;
+    overflow: hidden;
+    transition: 0.2s;
+    }
+    .pie:hover{
+        background:#f5099a;
+        box-shadow: 0 0 10px #f5099a, 0 0 40px #f5099a, 0 0 80px #f5099a;
+    }
+    .pie a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 20px;
+    }
+
+    /*Estilo de boton agregar*/
+.btn.btn-project{
+    background: #6d07a4;
+    border-radius:0 0 15px 15px;
+    padding: 10px;
+    text-align:center;
+    overflow: hidden;
+    transition: 0.2s;
+    }
+    .btn.btn-project:hover{
+        background:#ba09f5;
+        box-shadow: 0 0 10px #a609f5, 0 0 40px #9f09f5, 0 0 80px #b209f5;
+    }
+    .btn.btn-project{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 18px;
+    }

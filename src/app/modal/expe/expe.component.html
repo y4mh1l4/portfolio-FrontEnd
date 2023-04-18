@@ -1,0 +1,82 @@
+
+<!-- Modal de Experiencia para editar-->
+<form [formGroup]="Form" (ngSubmit)="onEnviar($event)" name="expertForm">
+        <div class="container-fluid pt-5">
+          <div class="modal-content" >
+            <div class="modal-header">
+              <h2 class="experiencia" class="modal-title"><b>Experiencia</b></h2>
+              <i (click)="refrescar()" class="fa-solid fa-rotate-left"></i>
+            </div>
+            <div class="modal-body">
+              <input type="hidden" formControlName="id"  [ngModel]="experiencia.id">
+              <div class="row"> 
+                <div class="col-sm-10 pt-4">
+                  <label for="empresa" class="form-label"><span class="text-info"><h5>Nombre de la Empresa</h5></span></label>
+                  <input type="text" class="form-control" formControlName="empresa" id="empresa" placeholder="" [ngModel]="experiencia.empresa">
+                  <div *ngIf="empresa.invalid && (empresa.dirty || empresa.touched)"class="alert text-danger">
+                    <div *ngIf="empresa.errors?.['required']">
+                      <b>El nombre de la Empresa es requerido.</b>
+                    </div>
+                 </div>
+                </div>
+                  <div class="col-sm-10 mb-3 pt-3">
+                    <div class="mb-3">
+                      <label for="puesto" class="form-label"><span class="text-info"><h5>Puesto de Trabajo</h5></span></label>
+                      <input type="text" class="form-control" formControlName="puesto" id="puesto" placeholder="" [ngModel]="experiencia.puesto">
+                      <div *ngIf="puesto.invalid && (puesto.dirty || puesto.touched)"class="alert text-danger">
+                        <div *ngIf="puesto.errors?.['required']">
+                          <b>El puesto de trabajo es requerido.</b>
+                        </div>
+                     </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-10 mb-3">
+                      <label for="descripcion" class="form-label"><span class="text-info"><h5>Contenido</h5></span></label>
+                      <textarea class="form-control" formControlName="descripcion" id="descripcion" rows="3" [ngModel]="experiencia.descripcion"></textarea>
+                      <div *ngIf="descripcion.invalid && (descripcion.dirty || descripcion.touched)"class="alert text-danger">
+                        <div *ngIf="descripcion.errors?.['required']">
+                          <b>El contenido debe ser completado.</b>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="col-sm-10">
+                    <label for="fechainicio"><span class="text-info"><h5>Fecha de Inicio:</h5></span></label>
+                  <input type="date" id="fechainicio" name="trip-start" formControlName="fechainicio" [ngModel]="experiencia.fechainicio"
+                  value="2022-00-00"
+                  min="0000-01-01" max="0000-12-31">
+                  <div *ngIf="fechainicio.invalid && (fechainicio.dirty || fechainicio.touched)"class="alert text-danger">
+                    <div *ngIf="fechainicio.errors?.['required']">
+                      <b>La fecha de inicio es requerido.</b>
+                    </div>
+                 </div>
+                  <div class="col-sm-10 pt-2">
+                  <label for="fechafinal"><span class="text-info"><h5>Fecha de Final:</h5></span></label>
+                  <input type="date" id="fechafinal" name="trip-start" formControlName="fechafinal" [ngModel]="experiencia.fechafinal"
+                  value="0000-00-00"
+                  min="0000-01-01" max="2023-12-31">
+                  <div *ngIf="fechafinal.invalid && (fechafinal.dirty || fechafinal.touched)"class="alert text-danger">
+                    <div *ngIf="fechafinal.errors?.['required']">
+                      <b>El Titulo es requerido.</b>
+                    </div>
+                 </div>
+                </div>
+                </div>
+                <div class="col-sm-10 pt-2">
+                  <label for="logo" class="form-label"><span class="text-info"><h5>Enlace de la Foto</h5></span></label>
+                  <input class="form-control" type="text" formControlName="logo" id="logo" multiple [ngModel]="experiencia.logo">
+                  <div *ngIf="logo.invalid && (logo.dirty || logo.touched)"class="alert text-danger">
+                    <div *ngIf="logo.errors?.['required']">
+                      <b>La imagen es requerido.</b>
+                    </div>
+                 </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                      <button type="submit" class="btn btn-success" data-bs-toggle="modal">Agregar</button>
+                      <button (click)="salir() "type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </form>
+     

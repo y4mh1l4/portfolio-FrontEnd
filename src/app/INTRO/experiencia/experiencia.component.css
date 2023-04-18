@@ -1,0 +1,28 @@
+/*Estilo en el titulo Conocimiento*/
+.section-head{
+    background: linear-gradient(450deg, rgba(198, 18, 230, 0.695),rgba(24, 4, 204, 0.758));
+    padding: 0.5rem;
+    color: rgb(207, 228, 230);
+    border:1px solid rgb(55, 223, 228);
+    text-transform: uppercase;
+    margin: 2rem;
+    margin-left: -4rem;
+    margin-bottom: 2rem;
+    margin-right: -4rem;
+    box-shadow: 0 0 10px #8a08d1, 0 0 40px #8a08d1, 0 0 80px #8a08d1;
+}
+
+/*Estilos en el subtitulo experiencia y educacion*/
+.section-subHead.mb-4{
+    color:#ee7ad9;
+    border: 5px solid #df0930;
+    border-radius: 5px 2px 40px;
+    box-shadow: 0 0 5px #f5099a, 0 0 15px #f5099a, 0 0 45px #f5099a;
+}
+
+/*Estilo en caja de Experiencia*/
+.ExperienceList.b-box.p-4{
+    margin: 1rem;
+    border: inset #1fcfee;
+    background: linear-gradient(450deg, rgba(90, 1, 77, 0.881),rgba(10, 2, 85, 0.83)); 
+}

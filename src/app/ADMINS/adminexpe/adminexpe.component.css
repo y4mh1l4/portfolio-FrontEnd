@@ -1,0 +1,60 @@
+/*Estilo en el titulo Conocimiento*/
+.section-head{
+    background: linear-gradient(450deg, rgba(117, 18, 230, 0.695),rgba(4, 37, 204, 0.758));
+    padding: 0.5rem;
+    color: rgb(207, 228, 230);
+    border:1px solid rgb(55, 223, 228);
+    text-transform: uppercase;
+    margin: 2rem;
+    margin-left: -4rem;
+    margin-bottom: 2rem;
+    margin-right: -4rem;
+    box-shadow: 0 0 10px #080fd1, 0 0 40px #080fd1, 0 0 80px #080fd1;
+}
+/*Estilos en el subtitulo experiencia, educacion y capacitacion*/
+.section-subHead.mb-4{
+    color:#ee7ad9;
+    border: 5px solid #df0930;
+    border-radius: 5px 2px 40px;
+    box-shadow: 0 0 5px #f5099a, 0 0 15px #f5099a, 0 0 45px #f5099a;
+}
+/*Estilo en caja de Experiencia*/
+.ExperienceList.b-box.p-4{
+    margin: 1rem;
+    border: inset #1fcfee;
+    background: rgb(0, 0, 0)
+}
+
+/*Estilo de boton agregar*/
+.btn.btn-expe{
+    background: #6d07a4;
+    border-radius:0 0 15px 15px;
+    padding: 10px;
+    text-align:absolute;
+    overflow: hidden;
+    transition: 0.2s;
+    }
+    .btn.btn-expe:hover{
+        background:#ba09f5;
+        box-shadow: 0 0 10px #a609f5, 0 0 40px #9f09f5, 0 0 80px #b209f5;
+    }
+    .btn.btn-expe{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 18px;
+    }
+
+    /*ventanas modales*/
+.modal-body{
+    background: rgb(4, 0, 18);
+}
+.modal-footer{
+    background: rgb(4, 0, 18);
+}
+.modal-title{
+    color: rgb(240, 7, 205);
+}
+
+i.fa-solid.fa-rotate-left{
+    color:rgb(117, 6, 220)
+}

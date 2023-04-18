@@ -1,0 +1,67 @@
+<!-- Modal de Formacion para editar-->
+<form  [formGroup]="Form" (ngSubmit)="onEnviar($event)" name="formacionForm">
+        <div class="container-fluid pt-5">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="formación" class="modal-title" id="educModalLabel"><b>Formación</b></h2>
+              <i  (click)="refrescar()" class="fa-solid fa-rotate-left"></i>
+            </div>
+            <div class="modal-body">
+              <input type="hidden" formControlName="id"  [ngModel]="formaciones.id">
+              <div class="col-sm-10 pt-4">
+                  <label for="institucion" class="form-label"><span class="text-info"><h5>Nombre de la Institución</h5></span></label>
+                  <input type="text" class="form-control" formControlName="institucion" id="institucion" placeholder="" [ngModel]="formaciones.institucion">
+                  <div *ngIf="institucion.invalid && (institucion.dirty || institucion.touched)"class="alert text-danger">
+                    <div *ngIf="institucion.errors?.['required']">
+                      <b>El nombre de la institucion es requerido.</b>
+                    </div>
+                 </div>
+                </div>
+            <div class="col-sm-10 mb-3 pt-3">
+              <label for="logo" class="form-label"><span class="text-info"><h5>Enlace de la Foto</h5></span></label>
+              <input class="form-control" type="text" formControlName="logo" id="logo" multiple [ngModel]="formaciones.logo">
+              <div *ngIf="logo.invalid && (logo.dirty || logo.touched)"class="alert text-danger">
+                <div *ngIf="logo.errors?.['required']">
+                  <b>La imagen es requerido.</b>
+                </div>
+             </div>
+            </div>
+            <div class="col-sm-10 mb-3 pt-2">
+            <label for="fechainicio"><span class="text-info"><h5>Fecha de Inicio:</h5></span></label>
+                      <input type="date" id="fechainicio" name="trip-start" formControlName="fechainicio" [ngModel]="formaciones.fechainicio"
+                      value="2022-00-00"
+                      min="0000-01-01" max="0000-12-31"><br>
+                      <div *ngIf="fechainicio.invalid && (fechainicio.dirty || fechainicio.touched)"class="alert text-danger">
+                        <div *ngIf="fechainicio.errors?.['required']">
+                          <b>La fecha de inicio es requerido.</b>
+                        </div>
+                     </div>
+                      <div class="col-sm-10 pt-2">
+                      <label for="fechafinal"><span class="text-info"><h5>Fecha de Final:</h5></span></label>
+                      <input type="date" id="fechafinal" name="trip-start" formControlName="fechafinal" [ngModel]="formaciones.fechafinal"
+                      value="0000-00-00"
+                      min="0000-01-01" max="2023-12-31">
+                      <div *ngIf="fechafinal.invalid && (fechafinal.dirty || fechafinal.touched)"class="alert text-danger">
+                        <div *ngIf="fechafinal.errors?.['required']">
+                          <b>La fecha final es requerido.</b>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-10 mb-3 pt-3">
+                    <label for="descripcion" class="form-label"><span class="text-info"><h5>Nombre de la Carrera</h5></span></label>
+                    <textarea class="form-control" formControlName="descripcion" id="descripcion" rows="3" [ngModel]="formaciones.descripcion"></textarea>
+                    <div *ngIf="descripcion.invalid && (descripcion.dirty || descripcion.touched)"class="alert text-danger">
+                      <div *ngIf="descripcion.errors?.['required']">
+                        <b>La carrera de estudio es requerido.</b>
+                      </div>
+                   </div>
+                  </div>
+              </div>
+            </div>
+          <div class="modal-footer">
+              <button type="submit" class="btn btn-success" data-bs-toggle="modal">Agregar</button>
+              <button (click)="salir()" type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+          </div>
+          </div>
+        </div>
+        </form>

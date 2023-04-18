@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(1, 1, 13) 0%, rgb(36, 0, 48) 37%, rgb(3, 32, 117) 77%, rgb(1, 2, 26) 100%);
+    background: -moz-linear-gradient(90deg, rgb(2, 1, 20) 0%, rgb(44, 1, 38) 37%, rgb(1, 21, 81) 77%, rgb(0, 1, 10) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(65, 1, 45) 37%, rgb(2, 20, 75) 77%, rgb(1, 4, 69) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#05083b",GradientType=1);
+    
+}
+
+
+/*video de fondo*  
+video.video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -5;
+}*/
+
+/*Estilo del Pie de Pagina*/
+footer{
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(176,6,121,1) 37%, rgba(32,82,230,1) 77%, rgba(5,8,59,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(176,6,121,1) 37%, rgba(32,82,230,1) 77%, rgba(5,8,59,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(176,6,121,1) 37%, rgba(32,82,230,1) 77%, rgba(5,8,59,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#05083b",GradientType=1);
+    color:#fff;
+    text-align: center;
+    padding: 20px;
+    min-width: 118%;
+    margin:1%;
+    margin-left: -6.5rem;
+    width: 30%;
+    box-sizing: border-box;
+    font-family: 'align' cursive;
+    font-family: 18px;
+}
+/*Estilo de los formularios reactivos*/
+.ng-valid:not(form).ng-touched {
+    border-right: 10px solid rgb(8, 239, 8); 
+}
+.ng-invalid:not(form).ng-touched {
+    border-right: 10px solid red;
+
+}

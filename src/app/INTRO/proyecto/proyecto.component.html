@@ -1,0 +1,23 @@
+<!--seccion de Proyectos-->
+<div class="container text-center pt-5">
+    <h2 class="titulo"><b>Proyectos</b></h2>
+  <br>
+  <div class="card-group mt-3" data-aos="fade-down">
+    <div class="tarjeta" *ngFor="let proyectos of project">
+      <div class="subtitulo"><b>{{proyectos.subtitulo}}</b></div>
+      <div class="cuerpo">
+        <img [src]="proyectos.imagen" width="400px" height="250px">
+        <!-- Date, Category of the Project -->
+        <p><span class="text-white">Datos:&nbsp; {{proyectos.fecha}}</span></p>
+        <p><span class="text-white">Categoria:&nbsp; {{proyectos.descripcion}}</span></p>
+      </div>
+      <div class="pie">
+        <a [href]="proyectos.enlace" target="_blank">Ir a la Página</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <i class="fa-regular fa-registered"></i> Peña Yamila Gisele &copy;2022 
+    <br/> <br/>
+    <i class="fa-solid fa-envelope"></i> Email: giselleya96@gmail.com <br>
+  </footer>

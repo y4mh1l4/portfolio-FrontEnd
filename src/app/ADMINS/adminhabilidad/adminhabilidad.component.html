@@ -1,0 +1,29 @@
+<!--Habilidades-->
+<section>
+    <div class="caja-barras" data-aos="zoom-in">
+      <div class="container justify-content-center">
+      <div class="row">
+        <div class="col-9">
+      <div class="contenedor">
+        <h2>MIS HABILIDADES</h2>
+        <div class="pull-right pt-3">
+            <button type="button" class="btn btn-skills" data-bs-toggle="modal" data-bs-target="#agregarskillModal">Agregar skills</button>
+          </div>
+          <br>
+        <div class="skills" *ngFor="let habilidades of habi">
+          <span>{{habilidades.skill}}</span>
+          <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" [style.width.%]="habilidades.porcentaje" style="min-width:10%">
+            </div>
+          </div>
+          <div class="pull-right pt-3">
+            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" 
+            (click)="borrar(habilidades.id!)">Eliminar</button>
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" 
+            routerLink="/habilidad/{{habilidades.id}}">Editar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<app-agregarskill></app-agregarskill>

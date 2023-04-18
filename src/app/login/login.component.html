@@ -1,0 +1,53 @@
+  <!-- Modal -->
+  <section>
+  <div class="row pt-5">
+    <div class="container-fluid">
+    <div class="col-lg-12 pt-5 text-center">
+          <h2 class="Bienvenido"  id="login"><b>Mi Portafilio</b></h2>
+          <br/>
+          <i class="fa-solid fa-user-circle user fa-6x"></i>
+          <br/>
+          <h4 class="Bienvenido">Inicio de Sesión</h4>
+        </div>
+        <form [formGroup]="loginform" (ngSubmit)="onEnviar($event)">
+          <div class="mb-5 row lg-3 pt-5">
+            <label for="email"  class="col-2 col-form-label"><i class="fa-solid fa-envelope fa-2x"></i></label>
+            <div class="col-8 pt-3">
+              <input formControlName="email" type="text"   class="form-control" id="email" placeholder="Escribe tu email..." >
+              <div *ngIf="Email.invalid && (Email.dirty || Email.touched)"class="alert text-white">
+                <div *ngIf="Email.errors?.['required']">
+                  <b>El Email es requerido.</b>
+                </div>
+                <div *ngIf="Email.errors?.['email']">
+                  <b>El Email debe tener un formato valido.</b>
+                </div>
+             </div>
+          </div>
+          </div>
+          <div class="mb-3 row lg-3 pt-2">
+            <label for="clave"  class="col-2 col-form-label"><i class="fa-solid fa-key fa-2x"></i></label>
+            <div class="col-8 pt-3"> 
+              <input  formControlName="clave" type="password"  class="form-control" id="clave" placeholder="Escribe tu clave..." >
+              <div *ngIf="Clave.invalid && (Clave.dirty || Clave.touched)"class="alert text-white">
+                <div *ngIf="Clave.errors?.['required']">
+                  <b>El password es requerido.</b>
+                </div>
+                <div *ngIf="Clave.errors?.['minlength']">
+                  <b>El password debe tener como minimo 8 caracteres!</b>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="modal-footer pt-4">
+              <button type="submit" routerLink="/index" class="btn btn-danger"><i class="fa-solid fa-share-from-square"></i> Cerrar sesión </button>
+              <button type="submit" class="btn btn-inicio" data-bs-toggle="modal"><i class="fa-solid fa-right-to-bracket"></i> Iniciar sesión </button>
+             </div>
+             </form>
+            </div>
+            </div>
+           </section>
+
+
+
+
+   

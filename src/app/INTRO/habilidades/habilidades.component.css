@@ -1,0 +1,98 @@
+/*Habilidades*/
+.caja-barras{
+    position: relative;
+    box-sizing: border-box;
+    width: 50%;
+    min-width: 57%;
+    margin-top: 3%;
+     margin-left: 30%;   
+}
+.contenedor{
+    width: 147%;
+    padding: 30px 30px 50px;
+    background:#cd05af99;
+    border: 2px solid rgba(0, 0, 0, 0.06);
+    border-radius: 10%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); 
+}
+/*Estilo en el titulo "Habilidades"*/
+.contenedor *{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(217, 242, 245);
+    font-weight: 500;
+}
+h2{
+    initial-letter: 2px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+.detalles{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+/*Estilo en el borde de la barra de porcentajes*/
+.menu{
+    position: relative;
+    border: 1px solid rgb(255, 0, 38);
+    border-radius: 20px;
+}
+/*barra de habilidades*/
+.menu div{
+    position: relative;
+    width: 0;
+    height: 15px;
+    border-radius: 20px;
+    background-color:#f218d1;
+    box-shadow: 0 0 5px #c60be7,
+    0 0 15px #c60be7,
+    0 0 35px #c60be7,
+    0 0 70px  #c60be7;
+    
+}
+
+/*Animacion para la barra*/
+#html-menu{
+    animation: html-barra 5s forwards;
+}
+
+@keyframes html-barra{
+    100%{
+        width: 90%;
+    }
+}
+#css-menu{
+    animation: css-barra 6s forwards;
+}
+
+@keyframes css-barra{
+    100%{
+        width: 75%;
+    }
+}
+
+#js-menu{
+    animation: js-barra 7s forwards; 
+}
+
+@keyframes js-barra{
+    100%{
+        width: 60%;
+    }
+}
+
+#python-menu{
+    animation: python-barra 8s forwards;
+}
+
+@keyframes python-barra{
+    100%{
+        width: 30%;
+    }
+}

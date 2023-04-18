@@ -1,0 +1,14 @@
+ <!--Acerca de Mi-->
+ <section>
+  <div class="col-12  pt-5">
+    <div class="info-mi"data-aos="fade-up"
+    data-aos-duration="3500">
+    <h3><span class="text-center" *ngFor="let sobremi of info"><b>{{sobremi.titulo}}</b>
+      <br>
+      <button type="button" class="btn btn-outline-success"data-bs-toggle="modal"
+      routerLink="/sobremi/{{sobremi.id}}"><i class="fa-solid fa-pen fa-2x"></i></button>
+      <br><br>
+            {{sobremi.contenido}}</span></h3>
+  </div>
+</div>
+</section>

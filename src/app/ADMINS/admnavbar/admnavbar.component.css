@@ -1,0 +1,24 @@
+/*Redes sociales y login */
+.navbar.navbar-expand-lg.bg-primary{
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(176,6,121,1) 37%, rgba(32,82,230,1) 77%, rgba(5,8,59,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(176,6,121,1) 37%, rgba(32,82,230,1) 77%, rgba(5,8,59,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(176,6,121,1) 37%, rgba(32,82,230,1) 77%, rgba(5,8,59,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#05083b",GradientType=1);
+}
+/*estilos de los iconos de las redes sociales */
+i.fa-solid.fa-plus.fa-2xl,
+i.fa-solid.fa-user-circle.user.fa-2xl{
+    color: #fff 
+}
+i.fa-solid.fa-plus.fa-2xl:hover{
+    color:black
+}
+i.fa-solid.fa-user-circle.user.fa-2xl:hover{
+    color:#ee1645
+}
+
+.list-group-item {
+    background-color: transparent ;
+    border-color: transparent ;
+}

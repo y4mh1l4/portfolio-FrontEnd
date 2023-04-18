@@ -1,0 +1,239 @@
+{
+    
+    "persona": [
+        {
+            "id": 1,
+            "foto": "assets/IMG/banner01.jpg",
+            "perfil": "assets/IMG/perfil.jpg",
+            "nombre": "Yamila Gisele",
+            "apellido": "Peña",
+            "profesion": "Full Stack Web Jr"
+        }
+    ],
+
+    "sobremi":[
+        {
+        "id": 1,
+        "titulo": "Acerca de  Mí",
+        "contenido": "Buenas! Me llamo Yamila tengo 25 años, soy de Laguna Naineck-Formosa, hace 2 años me gradué como Profesora de Biología. Actualmente trabajo en una Institución Educativa del Nivel Secundaria como Preceptor administrativo. También brindo servicio técnico en reparación de Computadoras de manera independiente. Desde mi adolescencia siempre me han gustado todo lo relacionado a las tecnologías, y siempre estoy en constante aprendizaje de manera autodidacta, me interesa adentrarme en el área del Desarollo Web y Pentesting en Seguridad Informática."
+    }
+],
+
+    "redes":[
+        {
+            "id": 1,
+            "usuario": "https://github.com/y4mh1l4",
+            "icono": "fa-brands fa-github fa-2xl"
+        },
+        {
+            "id": 2,
+            "usuario": "https://z-p15.www.instagram.com/yamil4__",
+            "icono": "fa-brands fa-instagram fa-2xl"
+        },
+        {
+            "id": 3,
+            "usuario": "https://www.linkedin.com/in/yamilaP0101",
+            "icono": "fa-brands fa-linkedin fa-2xl"
+
+        },
+        {
+            "id": 4,
+            "usuario": "https://www.facebook.com/Gyselle33",
+            "icono": "fa-brands fa-facebook fa-2xl"
+        } 
+            
+    ],
+
+    "experiencias": [
+        {
+            "id": 1,
+            "empresa": "EPES N°19 Vuelta de Obligado",
+            "puesto": "Preceptor Administrativo",
+            "descripcion": "Mí rol como Preceptora dentro del sistema educativo es cumplir el área administrativo y pedagógico.",
+            "fechainicio": "02/03/2021",  
+            "fechafinal": "23/12/2022",
+            "logo": "assets/IMG/logo19.jpg"
+        },
+
+        {
+            "id": 2,
+            "empresa": "PgService Computer",
+            "puesto": "Técnico en Reparación de Pc",
+            "descripcion": "PgService Computer es uno de mis oficios donde reparo Pc y Laptops que llevo a cabo de manera independiente.",
+            "fechainicio": "05/09/2020",  
+            "fechafinal": "15/01/2023",
+            "logo": "assets/IMG/logorep.jpg"
+        },
+
+        {
+            "id": 3,
+            "empresa": "GoCode",
+            "puesto": "Marketing Digital",
+            "descripcion": "Mí función dentro de esta empresa es promocionar los servicios de crear páginas WEB, que ofrecen a través de sus distintas redes sociales, con el objetivo de llegar a más personas.",
+            "fechainicio": "01/08/2022",
+            "fechafinal": "20/12/2022",
+            "logo": "assets/IMG/proyecto4.jpg"
+        },
+        
+        {
+            "id": 4,
+            "empresa": "Dirección de Cultura y Comunicación",
+            "puesto": "Gestor Cultural",
+            "descripcion": "La Dirección de Cultura y Comunicación es un organismo público de la  Municipalidad de la localidad de  Laguna Naineck y del Ministerio de Cultura de Argentina.",
+            "fechainicio": "15/02/2017",
+            "fechafinal": "20/10/2020",
+            "logo": "assets/IMG/cult.jpg"
+        }
+    ],
+    
+    "formaciones": [
+        {
+            "id":1,
+            "institucion": "I.S.F.D.C y T Laguna Naineck",
+            "logo": "assets/IMG/logo18.jpg",
+            "fechainicio": "03/03/2015", 
+            "fechafinal": "29/12/2020",
+            "descripcion": "Profesorado para la Educación Secundaria en Biología."
+        },
+        {
+            "id":2,
+            "institucion": "ISFDC y T Cristóbal Aguirre",
+            "logo": "assets/IMG/logo20.jpg",
+            "fechainicio": "02/03/2021",
+            "fechafinal": "15/12/2022",
+            "descripcion": "Técnico en Desarrollador de Software."
+        },
+        {
+            "id":3,
+            "institucion": "NEP y FP N°41",
+            "logo": "assets/IMG/logo41.jpg",
+            "fechainicio": "05/03/2016",
+            "fechafinal": "12/12/2019",
+            "descripcion": "Operador Informático. Instalador Electricista."
+        },
+        {
+            "id":4,
+            "institucion": "Argentina Programa",
+            "logo": "assets/IMG/logo21.png",
+            "fechainicio": "01/04/2022",
+            "fechafinal": "11/06/2022",
+            "descripcion": "1raSéprogramar|Fundamentación. 2daYoprogramo|Full-Stack Web"
+        } 
+    ],
+
+    "capacitaciones": [
+        {
+            "id":1,
+            "imagen": "assets/IMG/certificado01.jpg",
+            "fecha": "22/03/2022",
+            "curso": "Crear Web con HTML y CSS"
+
+        },
+        {
+            "id":2,
+            "imagen": "assets/IMG/certificado02.jpg",
+            "fecha": "15/10/2021",
+            "curso": "Fundamento de Programación"
+        },
+        {
+            "id":3,
+            "imagen": "assets/IMG/certificado03.jpg",
+            "fecha": "03/07/2022",
+            "curso": "Introducción a la Programacón"
+        },
+        {
+            "id":4,
+            "imagen": "assets/IMG/certificado04.jpg",
+            "fecha": "28/10/2021",
+            "curso": "Diseño de Página WEB"
+        },
+        {
+            "id":5,
+            "imagen": "assets/IMG/certificado05.jpg",
+            "fecha": "07/09/2021",
+            "curso": "Programación Básica."
+        },
+        {
+            "id":6,
+            "imagen": "assets/IMG/certificado06.jpg",
+            "fecha": "19/02/2022",
+            "curso": "Hacking de Redes WIFI"
+        },
+        {
+            "id":7,
+            "imagen": "assets/IMG/certificado07.jpg",
+            "fecha": "27/03/2021",
+            "curso": "Hacking Ético"
+        },
+        {
+            "id":8,
+            "imagen": "assets/IMG/certificado08.jpg",
+            "fecha": "11/06/2022",
+            "curso": "Séprogramar"
+        }
+    ],
+
+    "habilidades": [
+        {
+            "id": 1,
+            "porcentaje": 90,
+            "skill": "HTML",
+            "animacion":"html-menu" 
+        },
+        {
+            "id": 2,
+            "porcentaje": 75,
+            "skill": "CSS",
+            "animacion":"css-menu"
+        },
+        {
+            "id": 3,
+            "porcentaje": 60,
+            "skill": "JAVASCRIPT",
+            "animacion":"js-menu"
+        },
+        {
+            "id": 4,
+            "porcentaje": 30,
+            "skill": "PYTHON",
+            "animacion":"python-menu"
+        }
+    ],
+
+    "proyectos": [
+        {
+            "id": 1,
+            "subtitulo": "Mí primera Página Web",
+            "imagen": "assets/IMG/proyecto1.png",
+            "fecha": "05/05/2020",
+            "descripcion": "Diseño en wordpress",
+            "enlace": "https://primera-pagina-39721.000webhostapp.com/"
+        },
+        {
+            "id": 2,
+            "subtitulo": "Blog de Comidas Típicas",
+            "imagen": "assets/IMG/proyecto2.jpg",
+            "fecha": "28/02/2022",
+            "descripcion": "HTML5 y CSS3",
+            "enlace": "http://blogdecomidas.260mb.net/"
+
+        },
+        {
+            "id": 3,
+            "subtitulo": "Carta de Menu",
+            "imagen": "assets/IMG/proyecto3.jpg",
+            "fecha": "11/06/2021",
+            "descripcion": "HTML y CSS",
+            "enlace": "https://cartayoha.000webhostapp.com/index.html"
+        },
+        {
+            "id": 4,
+            "subtitulo": "GO CODE",
+            "imagen": "assets/IMG/proyecto4.jpg",
+            "fecha": "25/08/2022",
+            "descripcion": "Poryecto con la Comunidad de programadores",
+            "enlace": "https://www.gocode.ar/"
+        }
+    ]
+    
+}
