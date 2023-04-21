@@ -11,19 +11,21 @@ import { CoursesComponent } from './modal/courses/courses.component';
 import { SkillsComponent } from './modal/skills/skills.component';
 import { DesafioComponent } from './modal/desafio/desafio.component';
 import { Error404Component } from './error404/error404.component';
+import { GuardGuardService } from './servicios/guard.guard.service';
+
 
 
 
 const routes: Routes = [
-  {path: 'index', component:IndexComponent},
-  {path: 'dashboard', component:DashboardComponent},
+  {path: '', component:IndexComponent},
+  {path: 'dashboard',  component:DashboardComponent},
   {path: 'login', component:LoginComponent},
-  {path: 'sobremi/:id', component:AdmininfoComponent},
+  {path: 'sobremi/:id',  component:AdmininfoComponent},
   {path: 'perfil/:id', component:PerfiladmComponent},
-  {path: 'experiencia/:id', component:ExpeComponent},
-  {path: 'formacion/:id', component:FormacionComponent},
+  {path: 'experiencia/:id',  component:ExpeComponent},
+  {path: 'formacion/:id',  component:FormacionComponent},
   {path: 'cursos/:id', component:CoursesComponent},
-  {path: 'habilidad/:id', component:SkillsComponent},
+  {path: 'habilidad/:id',  component:SkillsComponent},
   {path: 'proyecto/:id', component:DesafioComponent},
   {path: '**', component:Error404Component}
  

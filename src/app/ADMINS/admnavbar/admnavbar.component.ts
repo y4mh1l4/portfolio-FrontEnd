@@ -11,7 +11,7 @@ export class AdmnavbarComponent {
   constructor(private router:Router) {}
 
   cerrarSesion(){
-   this.router.navigate(['/index']);
+   this.router.navigate(['']);
   }
 
 }

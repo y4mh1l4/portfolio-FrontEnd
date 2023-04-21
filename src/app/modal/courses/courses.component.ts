@@ -58,6 +58,7 @@ export class CoursesComponent implements OnInit {
 if (this.Form.valid){
   alert("Capacitacion modificada.");
   this.onUpdate();
+  window.location.reload();
 }else{
   alert("falló en la carga, intente nuevamente");
   this.Form.markAllAsTouched();

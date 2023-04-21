@@ -7,7 +7,7 @@ import { Habilidad } from '../entidad/habilidad';
   providedIn: 'root'
 })
 export class HabilidadService {
-  url= 'http://localhost:8080/habilidad/'
+  url= 'https://backdeployporfolio.onrender.com/habilidad/'
 
   constructor(private httpClient:HttpClient) { }
 

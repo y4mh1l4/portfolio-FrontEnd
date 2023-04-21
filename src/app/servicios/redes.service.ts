@@ -7,7 +7,7 @@ import { Redes } from '../entidad/redes';
   providedIn: 'root'
 })
 export class RedesService {
-  url= 'http://localhost:8080/red/'
+  url= 'https://backdeployporfolio.onrender.com/red/'
 
   constructor(private httpClient:HttpClient) { }
 

@@ -63,6 +63,7 @@ onEnviar(event:Event){
   if (this.Form.valid){
     alert("Experiencia modificada.");
     this.onUpdate();
+     window.location.reload();
   }else{
     alert("falló en la carga, intente nuevamente");
     this.Form.markAllAsTouched();

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CapacitacionService {
-  url= 'http://localhost:8080/capacitacion/'
+  url= 'https://backdeployporfolio.onrender.com/capacitacion/'
 
   constructor(private httpClient:HttpClient) { }
 

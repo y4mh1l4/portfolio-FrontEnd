@@ -52,7 +52,7 @@ export class AgregarformacionComponent implements OnInit {
     if(this.Form.valid){
       this.onCreate();
       alert("Nueva Formacion fue añadida correctamente");
-      this.router.navigateByUrl('/dashboard');
+      window.location.reload();
   }
 
   else{

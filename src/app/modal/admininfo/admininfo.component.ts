@@ -55,10 +55,15 @@ export class AdmininfoComponent implements OnInit {
 if (this.Form.valid){
   alert("Sobre Mi modificada.");
   this.onUpdate();
+  window.location.reload();
 }else{
   alert("falló en la carga, intente nuevamente");
   this.Form.markAllAsTouched();
 }
+}
+
+salir(){
+  this.router.navigateByUrl('/dashboard');
 }
 
   refrescar(){

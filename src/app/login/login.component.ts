@@ -54,6 +54,10 @@ export class LoginComponent implements OnInit {
       alert("Ha ocurrido un error");
     }
   }
+
+  cancelar(){
+    this.router.navigate(['']);
+  }
   
 }
 

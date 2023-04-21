@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class SobremiService {
-  url= 'http://localhost:8080/sobremi/'
+  url= 'https://backdeployporfolio.onrender.com/sobremi/'
 
   constructor(private httpClient:HttpClient) { }
 
