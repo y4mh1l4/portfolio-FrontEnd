@@ -1,14 +1,17 @@
 import { Injectable } from '@angular/core';
-import { AutenticationService } from './autentication.service';
-import { HttpEvent, HttpHandler, HttpRequest } from '@angular/common/http';
+import {
+  HttpRequest,
+  HttpHandler,
+  HttpEvent,
+  HttpInterceptor
+} from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { AutenticationService } from './autentication.service';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class InterceptorService {
+@Injectable()
+export class InterceptorInterceptor implements HttpInterceptor {
 
-  constructor(private autenticacionServicio: AutenticationService) { }
+  constructor(private autenticacionServicio: AutenticationService) {}
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     var currentUser = this.autenticacionServicio.usuarioAutenticado;
