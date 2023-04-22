@@ -2,18 +2,23 @@
 
 Este proyecto consiste en la realización de un Portfolio como medio de aprobación para el curso de Desarrollador Web Full Stack dictado por Argentina Programa 4.0. De la corte 3er Edicion YOPROGRAMO. 
 
-#FRONTEND
+# FrontEnd
 
 El proceso inicia desde una maqueta estática hasta la dinámica, la cual se despliega en Firebase.
 Es la interfaz gráfica del usuario que muestra la información.
 
-#Tecnologias usadas:
+# Tecnologias usadas:
 
 [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1. 
+
 HTML5
+
 CSS
+
 Bootstrap v.5.2
+
 VSC (VisualStudioCode) v.1.77.3
+
 Firebase
 
 
@@ -41,4 +46,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-#GRACIAS POR PASARTE A MI REPOSITORIO!!!
+# GRACIAS POR PASARTE A MI REPOSITORIO!!!
