@@ -66,7 +66,7 @@ if (this.Form.valid){
 }
 
 salir(){
-  this.router.navigateByUrl('/dashboard');
+  this.router.navigate(['/dashboard']);
 }
 
 refrescar(){

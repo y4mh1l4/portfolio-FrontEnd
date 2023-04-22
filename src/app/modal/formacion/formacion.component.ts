@@ -71,7 +71,7 @@ export class FormacionComponent implements OnInit {
 }
 
 salir(){
-  this.router.navigateByUrl('/dashboard');
+  this.router.navigate(['/dashboard']);
 }
 
 refrescar(){

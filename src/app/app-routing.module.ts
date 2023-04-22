@@ -20,14 +20,14 @@ import { GuardGuard } from './servicios/guard.guard';
 const routes: Routes = [
   {path: '', component:IndexComponent},
   {path: 'login', component:LoginComponent},
-  {path: 'dashboard',  component:DashboardComponent, canActivate:[GuardGuard]},
-  {path: 'sobremi/:id',  component:AdmininfoComponent, canActivate:[GuardGuard]},
-  {path: 'perfil/:id', component:PerfiladmComponent, canActivate:[GuardGuard]},
-  {path: 'experiencia/:id',  component:ExpeComponent, canActivate:[GuardGuard]},
-  {path: 'formacion/:id',  component:FormacionComponent, canActivate:[GuardGuard]},
-  {path: 'cursos/:id', component:CoursesComponent, canActivate:[GuardGuard]},
-  {path: 'habilidad/:id',  component:SkillsComponent, canActivate:[GuardGuard]},
-  {path: 'proyecto/:id', component:DesafioComponent, canActivate:[GuardGuard]},
+  {path: 'dashboard',  component:DashboardComponent}, 
+  {path: 'sobremi/:id',  component:AdmininfoComponent},
+  {path: 'perfil/:id', component:PerfiladmComponent},
+  {path: 'experiencia/:id',  component:ExpeComponent},
+  {path: 'formacion/:id',  component:FormacionComponent},
+  {path: 'cursos/:id', component:CoursesComponent},
+  {path: 'habilidad/:id',  component:SkillsComponent},
+  {path: 'proyecto/:id', component:DesafioComponent},
   {path: '**', component:Error404Component,}
  
 ];
